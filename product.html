@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <section class="header-top-wrapper">
+          <div class="header-top container">
+            <div class="header-top__phone vertical-center">
+              <p>custom care:</p>
+              <p>888-23-4567</p>
+            </div>
+            <div class="header-top__services">
+              <div class="vertical-bar"></div>
+              <div class="select-box">
+                <select class="select-currency select-style">
+                  <option value="dollar">$us</option>
+                  <option value="euro">€eur</option>
+                  <option value="rub">₽rub</option>
+                </select>
+              </div>
+              <div class="vertical-bar"></div>
+              <div class="user vertical-center">
+                <div class="user__img"><img src="static/images/content/user.png" alt="user"></div><span class="user__name">my account</span>
+              </div>
+              <div class="vertical-bar"></div>
+              <div class="search-box vertical-center">
+                <form class="search-form" method="get" action="/search">
+                  <button class="btn-search" type="button">
+                    <svg class="svg-sprite-icon icon-search">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <div class="text-input-box">
+                    <div class="text-input">
+                      <input class="text-input__control" type="text" placeholder="Search....">
+                      <button class="btn-find" type="submit">find</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="vertical-bar"></div>
+            </div>
+          </div>
+        </section>
+        <section class="header-down container vertical-center">
+          <div class="logo"><a href="index.html">
+              <svg class="svg-sprite-icon icon-logo">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+              </svg></a></div>
+          <nav class="menu-header-wrapper">
+            <ul class="menu-header">
+              <li class="menu-header__title">new
+                <ul class="dropdown">
+                  <li><a href="products.html">woman</a></li>
+                  <li><a href="products.html">men</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">desiners
+                <ul class="dropdown">
+                  <li><a href="products.html">valentino</a></li>
+                  <li><a href="products.html">gucci</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">women
+                <ul class="dropdown">
+                  <li><a href="products.html">dress</a></li>
+                  <li><a href="products.html">shirts</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">men
+                <ul class="dropdown">
+                  <li><a href="products.html">shirts</a></li>
+                  <li><a href="products.html">trousers</a></li>
+                  <li><a href="products.html">suit</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">clearence
+                <ul class="dropdown">
+                  <li><a href="products.html">sale</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart-box">
+            <div class="cart-box__item cart-filling">
+              <div>your cart</div>
+              <div class="arrow-down"></div>
+            </div>
+            <div class="cart-box__item cart-total"><img src="static/images/content/cart.png" alt="basket">
+              <p><span id="cart-items">0</span><span> items | $</span><span id="cart-sum">0</span></p>
+            </div>
+            <div class="widget-basket">dfgggg</div>
+          </div>
+        </section>
+        <div class="container">
+          <section class="mobile-menu-wrap vertical-center"><span>menu</span>
+            <div class="mobile-menu">
+              <div class="mobile-menu__line"></div>
+              <div class="mobile-menu__line"></div>
+              <div class="mobile-menu__line"></div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <div class="content container">
+        <section class="wrapper_line-top-dottom">
+          <div class="breadcrumbs-wrap">
+            <svg class="svg-sprite-icon icon-home">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#home"></use>
+            </svg>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><span>></span><a class="breadcrumbs__link" href="#">woman</a>
+              </li>
+              <li class="breadcrumbs__item"><span>></span><a class="breadcrumbs__link" href="#">Clothes</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="product-view-wrapper">
+          <div class="product-photo"><img src="static/images/content/priview-big.jpg" alt="product">
+            <div class="product-photo__preview product-photo__preview_margin"><img src="static/images/content/preview1.jpg" alt="product"><img src="static/images/content/preview2.jpg" alt="product"><img src="static/images/content/prewiew3.jpg" alt="product"><img src="static/images/content/preview4.jpg" alt="product"></div>
+          </div>
+          <div class="product-description">
+            <div class="description-breadcrumbs">
+              <svg class="svg-sprite-icon icon-arrowleft-bread">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#arrowleft-bread"></use>
+              </svg>Back to<span>Women’s Clothing</span>
+            </div>
+            <h2 class="product-description__title">Sofi Blouse</h2>
+            <div class="product-description__block-price">
+              <p class="product-description__price">$98.95</p>
+              <div class="product-description__rating">12 reviews<span class="rating_active"></span><span class="rating_active"></span><span class="rating_active"></span><span></span><span></span></div>
+            </div>
+            <div class="product-description__text">
+              This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+              Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+              nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+              ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+              consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+              per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit
+              amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam
+              pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
+              Suspendisse in orci enim.
+            </div>
+            <div class="product-variations wrapper_line-top-dottom">
+              <div class="product-variations__size">
+                <select>
+                  <option>Select size</option>
+                  <option>xs</option>
+                  <option>s</option>
+                  <option>m</option>
+                  <option>l</option>
+                </select>
+              </div>
+              <div class="product-variations__color"><span></span><span class="color_purple"></span><span class="color_brown"></span><span class="color_dark-brown"></span><span class="color_blue"></span></div>
+            </div>
+            <div class="count-cart">
+              <div class="count-box"><a class="btn-shop btn-shop_after btn-minus" href="#">-</a><a class="btn-shop btn-count" href="#">1</a><a class="btn-shop btn-shop_after btn-plus" href="#">+</a></div><a class="btn-shop btn-shop_after btn-product" href="#">add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"></a>
+            </div>
+          </div>
+        </section>
+        <section class="wrapper_line-top-dottom social-product"><a href="#">
+            <svg class="svg-sprite-icon icon-facebook">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#facebook"></use>
+            </svg><span>share on facebook</span></a><a href="#">
+            <svg class="svg-sprite-icon icon-pinteress">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#pinteress"></use>
+            </svg><span>pin this product</span></a><a href="#">
+            <svg class="svg-sprite-icon icon-twitter">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#twitter"></use>
+            </svg><span>tweet this product</span></a><a href="#">
+            <svg class="svg-sprite-icon icon-Email">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#Email"></use>
+            </svg><span>email a friend</span></a></section>
+        <div class="tabs-description">
+          <ul>
+            <li class="tabs-description__item">
+              <div class="tabs-title">
+                <div class="tabs-arrow">
+                  <svg class="svg-sprite-icon icon-tabs-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tabs-arrow"></use>
+                  </svg>
+                </div>
+                <h3>description</h3>
+              </div>
+              <div class="tabs-description__content tab1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus delectus deserunt facilis id repudiandae vel vitae voluptatem? Ab beatae, consectetur, delectus dignissimos esse excepturi expedita facilis harum iste maxime minus mollitia nemo nisi placeat quisquam quod sed temporibus ut voluptatum.</p>
+              </div>
+            </li>
+            <li class="tabs-description__item">
+              <div class="tabs-title">
+                <div class="tabs-arrow">
+                  <svg class="svg-sprite-icon icon-tabs-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tabs-arrow"></use>
+                  </svg>
+                </div>
+                <h3>additional information</h3>
+              </div>
+              <div class="tabs-description__content tab2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus delectus deserunt facilis id repudiandae vel vitae voluptatem? Ab beatae, consectetur, delectus dignissimos esse excepturi expedita facilis harum iste maxime minus mollitia nemo nisi placeat quisquam quod sed temporibus ut voluptatum.</p>
+              </div>
+            </li>
+            <li class="tabs-description__item">
+              <div class="tabs-title">
+                <div class="tabs-arrow">
+                  <svg class="svg-sprite-icon icon-tabs-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tabs-arrow"></use>
+                  </svg>
+                </div>
+                <h3>reviews (12)</h3>
+              </div>
+            </li>
+            <li class="tabs-description__item">
+              <div class="tabs-title">
+                <div class="tabs-arrow">
+                  <svg class="svg-sprite-icon icon-tabs-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tabs-arrow"></use>
+                  </svg>
+                </div>
+                <h3>helpful links</h3>
+              </div>
+            </li>
+            <li class="tabs-description__item">
+              <div class="tabs-title">
+                <div class="tabs-arrow">
+                  <svg class="svg-sprite-icon icon-tabs-arrow">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#tabs-arrow"></use>
+                  </svg>
+                </div>
+                <h3>make a gift</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <section class="accept">
+          <p>We accept<img class="pay-card" src="static/images/general/paycard1.png" alt="pay-card"></p>
+        </section>
+        <section class="footer-menu">
+          <div class="container footer-menu-wrapper">
+            <div class="footer-menu__box">
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Customer Service</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of payment</a></li>
+                    <li><a href="#">Terms of sale</a></li>
+                    <li><a href="#">Delivery terms and conditions</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Information</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">How to Shop</a></li>
+                    <li><a href="#">About Nelly</a></li>
+                    <li><a href="#">Investor relations</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Campaigns</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">Evening dresses</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Fashion forward</a></li>
+                    <li><a href="#">training clothes</a></li>
+                    <li><a href="#">Special</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Stores</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">paris</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">tokio</a></li>
+                    <li><a href="#">london</a></li>
+                    <li><a href="#">madrid</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="menu-footer footer-social">
+              <div class="menu-footer__title">
+                <h4>Social</h4>
+              </div>
+              <nav>
+                <ul class="footer-social__menu">
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-twitter-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#twitter-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-pinteress-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#pinteress-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-facebook-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#facebook-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-google-plus">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#google-plus"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-t-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#t-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-v-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#v-footer"></use>
+                      </svg></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="stamp-footer">
+              <div class="stamp-footer__icon">
+                <svg class="svg-sprite-icon icon-stamp-footer">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#stamp-footer"></use>
+                </svg>
+              </div>
+              <div class="stamp-footer__text">100%
+                <p>secured</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subfooter-wrapper">
+          <div class="container subfooter">
+            <nav>
+              <ul class="subfooter__menu">
+                <li><a href="#">Privacy & Cookies</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Story Directory</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </nav>
+            <div class="subfooter__right">© LookShop.com
+              <p>All Rights Reserved</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/slick.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <script src="static/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <section class="header-top-wrapper">
+          <div class="header-top container">
+            <div class="header-top__phone vertical-center">
+              <p>custom care:</p>
+              <p>888-23-4567</p>
+            </div>
+            <div class="header-top__services">
+              <div class="vertical-bar"></div>
+              <div class="select-box">
+                <select class="select-currency select-style">
+                  <option value="dollar">$us</option>
+                  <option value="euro">€eur</option>
+                  <option value="rub">₽rub</option>
+                </select>
+              </div>
+              <div class="vertical-bar"></div>
+              <div class="user vertical-center">
+                <div class="user__img"><img src="static/images/content/user.png" alt="user"></div><span class="user__name">my account</span>
+              </div>
+              <div class="vertical-bar"></div>
+              <div class="search-box vertical-center">
+                <form class="search-form" method="get" action="/search">
+                  <button class="btn-search" type="button">
+                    <svg class="svg-sprite-icon icon-search">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                  <div class="text-input-box">
+                    <div class="text-input">
+                      <input class="text-input__control" type="text" placeholder="Search....">
+                      <button class="btn-find" type="submit">find</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="vertical-bar"></div>
+            </div>
+          </div>
+        </section>
+        <section class="header-down container vertical-center">
+          <div class="logo"><a href="index.html">
+              <svg class="svg-sprite-icon icon-logo">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#logo"></use>
+              </svg></a></div>
+          <nav class="menu-header-wrapper">
+            <ul class="menu-header">
+              <li class="menu-header__title">new
+                <ul class="dropdown">
+                  <li><a href="products.html">woman</a></li>
+                  <li><a href="products.html">men</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">desiners
+                <ul class="dropdown">
+                  <li><a href="products.html">valentino</a></li>
+                  <li><a href="products.html">gucci</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">women
+                <ul class="dropdown">
+                  <li><a href="products.html">dress</a></li>
+                  <li><a href="products.html">shirts</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">men
+                <ul class="dropdown">
+                  <li><a href="products.html">shirts</a></li>
+                  <li><a href="products.html">trousers</a></li>
+                  <li><a href="products.html">suit</a></li>
+                </ul>
+              </li>
+              <li class="menu-header__title">clearence
+                <ul class="dropdown">
+                  <li><a href="products.html">sale</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart-box">
+            <div class="cart-box__item cart-filling">
+              <div>your cart</div>
+              <div class="arrow-down"></div>
+            </div>
+            <div class="cart-box__item cart-total"><img src="static/images/content/cart.png" alt="basket">
+              <p><span id="cart-items">0</span><span> items | $</span><span id="cart-sum">0</span></p>
+            </div>
+            <div class="widget-basket">dfgggg</div>
+          </div>
+        </section>
+        <div class="container">
+          <section class="mobile-menu-wrap vertical-center"><span>menu</span>
+            <div class="mobile-menu">
+              <div class="mobile-menu__line"></div>
+              <div class="mobile-menu__line"></div>
+              <div class="mobile-menu__line"></div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <div class="content container">
+        <section class="wrapper_line-top-dottom">
+          <div class="breadcrumbs-wrap">
+            <svg class="svg-sprite-icon icon-home">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#home"></use>
+            </svg>
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><span>></span><a class="breadcrumbs__link" href="#">woman</a>
+              </li>
+              <li class="breadcrumbs__item"><span>></span><a class="breadcrumbs__link" href="#">Clothes</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="slider-products">
+          <div class="slider-products__item">
+            <div class="slider-products__photo"><img src="static/images/content/slider-products-r.png" alt="slider-product"><img src="static/images/content/slider-products-l.png" alt="slider-product"></div>
+            <div class="slider-products__text">
+              <div class="description-products">
+                <h2 class="description-products__title">Open Heart Top</h2>
+                <p class="description-products__price">$13.95</p>
+                <p class="description-products__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam corporis cumque dolorum, harum hic maxime nisi reprehenderit repudiandae similique sit totam. Facere fugiat illum quam reprehenderit sint, sit voluptatibus!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet,
+                  animi aperiam atque illo magni nesciunt officia perspiciatis, qui sed sunt tempora,
+                  vero voluptas? Dolorem incidunt odit quae rerum veritatis?
+                </p><a class="btn-shop btn-shop_after description-products__btn">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slider-products__item">
+            <div class="slider-products__photo"><img src="static/images/content/slider-products-r.png" alt="product"><img src="static/images/content/slider-products-l.png" alt="product"></div>
+          </div>
+        </div>
+        <section class="products-content-wrapper">
+          <section class="products-content">
+            <div class="block-options">
+              <div class="sort">Sort by
+                <select>
+                  <option value="Date">date</option>
+                  <option>Price</option>
+                </select>
+              </div>
+              <div class="navigation">
+                <div class="navigation__text">Showing 1-12 of 347 results</div>
+                <div class="navigation__number"><a href="#"><span class="active-page">1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a href="#"><span>></span></a></div>
+              </div>
+            </div>
+            <section class="view-products">
+              <div class="view-products__row">
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo7.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">DRESS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">69.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo8.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">DRESS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">39.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo9.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">DRESS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">39.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo1.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">NADIA DRESS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">64.95</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo2.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">SOFI BLOUSE</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">26.35</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo3.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">GOODING SHORTS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">79.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo4.png" alt="product"/>
+                    <div class="sale">sale</div></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">GOODING SHORTS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">99.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo5.png" alt="product"/></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">SHORTS</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">19.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+                <div class="product-card product-card_hover"><a class="product-link" href="product.html"><img class="product-card__img" src="static/images/content/products-photo6.png" alt="product"/>
+                    <div class="sale">sale</div></a>
+                  <div class="product-card__description description">
+                    <h4 class="description__title">BLOUSE</h4>
+                    <div class="description__price"><span class="currency">$</span><span class="value">89.85</span><a class="btn-shop btn-shop_after btn-card" href="#">Add to cart<img class="btn-shop__img" src="static/images/general/plus.png" alt="plus"/></a></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="navigation_down">
+              <div class="navigation">
+                <div class="navigation__text">Showing 1-12 of 347 results</div>
+                <div class="navigation__number"><a href="#"><span class="active-page">1</span></a><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a href="#"><span>></span></a></div>
+              </div>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div class="sidebar-widget">
+              <div class="sidebar-widget__title">categories</div>
+              <nav class="menu-header-wrapper">
+                <ul class="menu-header">
+                  <li class="menu-header__title">new
+                    <ul class="dropdown">
+                      <li><a href="products.html">woman</a></li>
+                      <li><a href="products.html">men</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-header__title">desiners
+                    <ul class="dropdown">
+                      <li><a href="products.html">valentino</a></li>
+                      <li><a href="products.html">gucci</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-header__title">women
+                    <ul class="dropdown">
+                      <li><a href="products.html">dress</a></li>
+                      <li><a href="products.html">shirts</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-header__title">men
+                    <ul class="dropdown">
+                      <li><a href="products.html">shirts</a></li>
+                      <li><a href="products.html">trousers</a></li>
+                      <li><a href="products.html">suit</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-header__title">clearence
+                    <ul class="dropdown">
+                      <li><a href="products.html">sale</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="filter-widget">
+                <div class="filter-widget__line"></div>
+                <div class="filter-widget__price">Price $0 - $200
+                  <div class="btn-filter">filter</div>
+                </div>
+                <div class="filter-widget__size">Select your size
+                  <div class="size-enumeration"><span>xs</span><span>s</span><span>m</span><span>l</span><span>xl</span></div>
+                </div>
+              </div>
+              <div class="sidebar-widget__title">on sale</div><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/mini-sale1.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">PINTUCK TANK</div>
+                    <div class="mini-product__price">$45.55</div>
+                  </div>
+                </div></a><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/mini-sale2.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">FOLICIA SILK SHIRT</div>
+                    <div class="mini-product__price">$69.49</div>
+                  </div>
+                </div></a><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/mini-sale3.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">Laylala Shirt</div>
+                    <div class="mini-product__price">$78.25</div>
+                  </div>
+                </div></a>
+              <div class="sidebar-widget__title">featured products</div><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/feat1.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">Basic Sunglasses</div>
+                    <div class="mini-product__price">$14.90</div>
+                  </div>
+                </div></a><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/feat2.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">Billie J</div>
+                    <div class="mini-product__price">$69.49</div>
+                  </div>
+                </div></a><a class="product-link" href="product.html">
+                <div class="mini-product">
+                  <div class="mini-product__photo"><img src="static/images/content/feat3.png" alt="mini-photo"/></div>
+                  <div class="mini-product__description">
+                    <div class="mini-product__title">Sandie Shopperbag</div>
+                    <div class="mini-product__price">$69.95</div>
+                  </div>
+                </div></a>
+            </div>
+          </section>
+        </section>
+      </div>
+      <footer class="footer">
+        <section class="accept">
+          <p>We accept<img class="pay-card" src="static/images/general/paycard1.png" alt="pay-card"></p>
+        </section>
+        <section class="footer-menu">
+          <div class="container footer-menu-wrapper">
+            <div class="footer-menu__box">
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Customer Service</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of payment</a></li>
+                    <li><a href="#">Terms of sale</a></li>
+                    <li><a href="#">Delivery terms and conditions</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Information</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">How to Shop</a></li>
+                    <li><a href="#">About Nelly</a></li>
+                    <li><a href="#">Investor relations</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Campaigns</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">Evening dresses</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Fashion forward</a></li>
+                    <li><a href="#">training clothes</a></li>
+                    <li><a href="#">Special</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="menu-footer">
+                <div class="menu-footer__title">
+                  <h4>Stores</h4>
+                </div>
+                <nav>
+                  <ul class="menu-footer__body">
+                    <li><a href="#">paris</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">tokio</a></li>
+                    <li><a href="#">london</a></li>
+                    <li><a href="#">madrid</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="menu-footer footer-social">
+              <div class="menu-footer__title">
+                <h4>Social</h4>
+              </div>
+              <nav>
+                <ul class="footer-social__menu">
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-twitter-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#twitter-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-pinteress-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#pinteress-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-facebook-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#facebook-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-google-plus">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#google-plus"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-t-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#t-footer"></use>
+                      </svg></a></li>
+                  <li><a href="#">
+                      <svg class="svg-sprite-icon icon-v-footer">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#v-footer"></use>
+                      </svg></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="stamp-footer">
+              <div class="stamp-footer__icon">
+                <svg class="svg-sprite-icon icon-stamp-footer">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#stamp-footer"></use>
+                </svg>
+              </div>
+              <div class="stamp-footer__text">100%
+                <p>secured</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subfooter-wrapper">
+          <div class="container subfooter">
+            <nav>
+              <ul class="subfooter__menu">
+                <li><a href="#">Privacy & Cookies</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Story Directory</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </nav>
+            <div class="subfooter__right">© LookShop.com
+              <p>All Rights Reserved</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/slick.min.js"></script>
+  </body>
+</html>

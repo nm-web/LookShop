@@ -1,0 +1,81 @@
+.stamp-wrapper{
+  display: flex;
+  justify-content: center;
+
+}
+
+.stamp {
+  display: flex;
+  justify-content: center;
+  color:$white;
+  align-items: center;
+}
+.stamp__icon{
+
+  & svg{
+    //position: absolute;
+    fill: #525252;
+    fill-rule: evenodd;
+  }
+  & svg:first-child {
+    width:10em;
+    height: 10em;
+  }
+  & svg:last-child{
+    position: absolute;
+    left: calc(50% - 4.5em);
+    top: 0.5em;
+    z-index: 10;
+    width:9em;
+    height: 9em;
+    stroke: $white;
+    stroke-linejoin: round;
+    stroke-opacity: 0.59;
+    stroke-width: 2px;
+    &:hover {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.stamp__text {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.5em;
+  left: calc(50% - 2.3em);
+  z-index: 11;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: -0.17em;
+  text-align: center;
+
+  &>p {
+    font-size: 4.5rem;
+    display: flex;
+    line-height: 1;
+    &>span {
+      font-size: 1.3rem;
+      display: flex;
+      height: 3.36em;
+      flex-direction: column;
+      letter-spacing: 0.1em;
+      justify-content: space-evenly;
+    }
+  }
+
+}
+
+.stamp_line {
+  &:before,
+  &:after {
+
+    @include line(35%, 1px, #d8d8d8);
+  }
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+}

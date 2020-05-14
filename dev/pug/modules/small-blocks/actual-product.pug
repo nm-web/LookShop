@@ -1,0 +1,10 @@
+-
+    var actualProducts=[{photo:'product1',title:'NADIA DRESS',price:'66.95',sale:'sale'},
+    {photo:'product2',title:'SOFI BLOUSE',price:'89.95',sale:''},
+    {photo:'product3',title:'GOODING SHORTS',price:'15.95',sale:''},
+    {photo:'product4',title:'MIMOSA LACE DRESS',price:'21.50',sale:'sale'}]
+section.container
+    .products-wraper
+        each item in actualProducts
+            .products-actual
+                +productCard(item.photo,item.title,item.price,item.sale)

@@ -1,0 +1,34 @@
+-
+    var sliderData=[{photo:'tab-photo1',title:'MIMOSA LACE DRESS',price:'76.95',sale:'sale'},
+    {photo:'tab-photo2',title:'FEEL TANK',price:'59.95',sale:''},
+    {photo:'tab-photo3',title:'HOT SHORTS',price:'35.95',sale:''},
+    {photo:'tab-photo4',title:'PETROL SWEATER',price:'21.50',sale:'sale'},
+    {photo:'tab-photo1',title:'MIMOSA LACE DRESS',price:'68.57',sale:''},
+    {photo:'tab-photo3',title:'HOT SHORTS',price:'38.98',sale:''}]
+section.tabs-wrapper
+    .container
+        ul.tabs-nav
+            li(data-tab-name="tab-1").tabs-nav__item.tabs-nav__item_active what’s hot?
+            li(data-tab-name="tab-2").tabs-nav__item designers
+            li(data-tab-name="tab-3").tabs-nav__item featured
+            li(data-tab-name="tab-4").tabs-nav__item latest
+
+    .tabs-content
+        .tabs-content__item.tab-1.tabs-content__item_active
+            .tab-slider-tab-1.tab-slider_min-screen
+                each item in sliderData
+                    .slider-content
+                        +productCard(item.photo,item.title,item.price,item.sale)
+                        a.shop-link(href="#")
+                            span Shop It
+                            +icon('bag')
+        .tabs-content__item.tab-2
+            .tab-slider-tab-2.tab-slider_min-screen
+                each item1 in sliderData
+                    .slider-content
+                        +productCard(item1.photo,item1.title,item1.price,item1.sale)
+        .tabs-content__item.tab-3
+            .tab-slider-tab-3.tab-slider_min-screen
+                each item2 in sliderData
+                    .slider-content
+                        +productCard(item2.photo,item2.title,item2.price,item2.sale)

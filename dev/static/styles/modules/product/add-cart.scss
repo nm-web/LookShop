@@ -1,0 +1,50 @@
+.count-cart {
+  margin: 1em 0;
+  display: flex;
+  @media screen and (max-width: 450px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.count-box{
+  display: flex;
+  width: 30%;
+  @media screen and (max-width: 640px){
+    width: 45%;
+  }
+  @media screen and (max-width: 450px){
+    width: 55%;
+    margin-bottom: 1em;
+  }
+}
+.btn-product {
+  height: 3rem;
+  width: 30%;
+  margin: 0;
+  @media screen and (max-width: 640px){
+    width: 55%;
+    font-size: 0.7rem;
+  }
+  @media screen and (max-width: 450px){
+    width: auto;
+    padding:0 0.5em
+
+  }
+}
+
+.btn-minus,
+.btn-plus,
+.btn-count {
+  height: 3rem;
+  width: 25%;
+  margin: 0;
+  @media screen and (max-width: 450px){
+    width: 35%;
+
+  }
+}
+
+.btn-count {
+  background: #feb298;
+}

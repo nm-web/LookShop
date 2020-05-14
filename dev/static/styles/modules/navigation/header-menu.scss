@@ -1,0 +1,44 @@
+
+.menu-header-wrapper {
+  width: 50%;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    position: relative;
+    cursor: pointer;
+    text-transform: lowercase;
+    &:after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 100%;
+      margin-left: 6px;
+      border: 0.25em solid transparent;
+      border-top: 0.25em solid #000000;
+    }
+  }
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  top:100%;
+  z-index: 20;
+  background: #fafafa;
+  width: 5em;
+  box-shadow: 3px 2px 27px -1px rgba(253,146,109,0.8);
+  & li {
+    padding: 0.5em;
+  }
+}
+
+
+.is-open {
+  .dropdown { display: block; }
+}

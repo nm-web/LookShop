@@ -1,0 +1,23 @@
+section.slider
+    .header-slider
+        img(src=way+"/content/slider.jpg" alt='slider')
+        img(src=way+"/content/slider.jpg" alt='slider')
+        img(src=way+"/content/slider.jpg" alt='slider')
+        img(src=way+"/content/slider.jpg" alt='slider')
+    .slider-text
+        .slider-text__subtitle.text-around-line Crazy
+        .slider-text__title
+            svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"   viewBox="0 0 380 180")
+                pattern(id="pattern" patternUnits="userSpaceOnUse" width="380" height="85" viewBox="0 0 380 85")
+                    image(xlink:href="static/images/content/fon_text.png" width="100%" height="100%")
+                text(x="35" y="75" stroke="none"  fill="url(#pattern)") Crazy
+                text(x="10" y="160" stroke="none"  fill="url(#pattern)") Summer
+        .line.slider-text__line_thick
+        .line.slider-text__line_thin
+        .slider-text__collection
+            h1 woman collection
+        a(href='products.html').slider-btn.btn-shop.btn-shop_after
+            span shop now
+                +icon('arrow-btn-right')
+
+    .slider-line

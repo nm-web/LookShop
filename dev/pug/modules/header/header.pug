@@ -1,0 +1,54 @@
+-var currency = [{value:'dollar',text:'$us'}, {value:'euro',text:'€eur'}, {value:'rub',text:'₽rub'}]
+-var phoneNumber = '888-23-4567'
+header.header
+    section.header-top-wrapper
+        .header-top.container
+            .header-top__phone.vertical-center
+                p custom care:
+                p #{phoneNumber}
+            .header-top__services
+                .vertical-bar
+                .select-box
+                    select.select-currency.select-style
+                        each item in currency
+                            option(value=item.value) #{item.text}
+                .vertical-bar
+                .user.vertical-center
+                    .user__img
+                        img(src=way+"/content/user.png" alt='user')
+                    span.user__name my account
+                .vertical-bar
+                .search-box.vertical-center
+                    form(method='get' action='/search' class='search-form')
+                        button(type='button' class='btn-search')
+                            +icon('search')
+                        .text-input-box
+                            .text-input
+                                input(type='text' placeholder='Search....').text-input__control
+                                button(type='submit' class='btn-find') find
+                .vertical-bar
+
+    section.header-down.container.vertical-center
+        .logo
+
+            a(href='index.html')
+                +icon('logo')
+
+        include ../navigation/header-menu
+        .cart-box
+            .cart-box__item.cart-filling
+                div your cart
+                div.arrow-down
+            .cart-box__item.cart-total
+                img(src=way+"/content/cart.png" alt='basket')
+                p
+                    span#cart-items 0
+                    span  items | $
+                    span#cart-sum 0
+            .widget-basket dfgggg
+
+    .container
+        section.mobile-menu-wrap.vertical-center
+            include ../navigation/mobile-menu
+
+

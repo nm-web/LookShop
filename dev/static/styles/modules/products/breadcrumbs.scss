@@ -1,0 +1,40 @@
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  padding: 0;
+
+  & > * {
+    &:not(:last-child) { margin-right: 8px; }
+  }
+  &__item {
+    white-space: nowrap;
+  }
+  &__link{
+    text-transform: capitalize;
+    color: #79706d;
+    font-size: 0.687rem;
+
+  }
+  & span{
+    font-size: 0.687rem;
+    margin-right: 8px;
+    vertical-align: middle;
+    color:#79706d;
+  }
+}
+
+.breadcrumbs-wrap {
+  display: flex;
+  margin-right: 0.5em;
+  & svg {
+    width: 0.75em;
+    height: 1.65em;
+    fill: #79706d;
+    vertical-align: middle;
+    display: inline;
+  }
+}
+.wrapper_line-top-dottom {
+  border-top:1px solid $grey-border;
+  border-bottom: 1px solid $grey-border;
+}

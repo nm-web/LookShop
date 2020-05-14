@@ -1,0 +1,11 @@
+.text-around-line {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+  }
+
+}
+

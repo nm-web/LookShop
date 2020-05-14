@@ -1,0 +1,17 @@
+.about {
+  margin:1.5em auto;
+  text-align: center;
+  @media screen and (max-width: 640px){
+    display: none;
+  }
+  &__text{
+    color:#a1a1a1;
+  }
+  &__title{
+    text-transform: capitalize;
+    color: rgb(65, 65, 65);
+    line-height: 1.2;
+    font-size: 1.5rem;
+   }
+}
+

@@ -1,0 +1,139 @@
+.subscribe-wrapper {
+  background-color: $grey;
+
+  @media screen and (max-width: 640px) {
+    background-color: $white;
+
+  }
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  height: 4.58em;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #767676;
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+
+
+  }
+}
+
+.social-box {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  & span {
+    margin-right: 2.08em;
+    @media screen and (max-width: 480px) {
+      font-size: 0.5rem;
+    }
+   }
+  @media screen and (max-width: 640px) {
+    margin: 0.83em 0;
+    //height: 4.5em;
+  }
+
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    height: 3.23em;
+  }
+
+  & span {
+    margin-right: 0.92em;
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+
+
+}
+
+.subscribe-form__btn {
+
+  width: 2.42em;
+  height: 2.42em;
+  border: none;
+  & svg {
+    //margin: 0;
+    fill:$white;
+    width: 2em;
+    height: 2em;
+    //object-fit: cover;
+
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 10%;
+    height: inherit;
+  }
+
+}
+
+#subscribe-form__email{
+  border: none;
+  height: 2.42em;
+  padding: 0 1em;
+
+  &::placeholder {
+    color:#a7a7a7;
+    font-size: 1rem;
+
+  }
+  @media screen and (max-width: 640px) {
+    width: 90%;
+    background-color: #ededed;
+    height: inherit;
+  }
+
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  height: inherit;
+
+
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5em;
+  height: inherit;
+  cursor: pointer;
+  &:nth-child(odd){
+    background-color: #f7f7f7;
+
+  }
+
+  &:nth-child(even){
+    background-color: #ededed;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 3.5em;
+  }
+  @media screen and (max-width: 420px) {
+    width: 2.5em;
+  }
+
+}
+
+.socials__link svg{
+  width: 2em;
+  height: 2em;
+  fill:#6b6b6b;
+
+  @media screen and (max-width: 640px) {
+    width: 1em;
+  }
+}

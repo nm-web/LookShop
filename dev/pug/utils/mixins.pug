@@ -1,0 +1,59 @@
+mixin icon(name,mod)
+	if(mod)
+		svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-sprite-icon icon-" + name)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+
+mixin breadcrumbs-item(text,href)
+	li.breadcrumbs__item
+		if(href)
+			span >
+			a.breadcrumbs__link(href=href)=text
+
+		else
+			span.breadcrumbs__text=text
+
+
+
+mixin socialLink(icon,link)
+	li.socials__item
+		a(href=link).socials__link
+			+icon(icon)
+
+
+
+mixin productCard(namePhoto, title, price, sale)
+
+		.product-card.product-card_hover
+			a(href='product.html' class='product-link')
+				img(src=way+'/content/'+namePhoto+'.png' class='product-card__img' alt='product')
+				if (sale === 'sale')
+					.sale sale
+			.product-card__description.description
+				h4.description__title=title
+				.description__price
+					span.currency $
+					span.value=price
+					a(href='#').btn-shop.btn-shop_after.btn-card Add to cart
+						img(class='btn-shop__img' src=way+'/general/plus.png' alt='plus')
+
+mixin menuFooter(arrayItem)
+	nav
+		ul.menu-footer__body
+			each item in arrayItem
+				li
+					a(href=item.link)=item.text
+
+
+
+mixin miniProduct(miniPhoto,miniTitle,miniPrice)
+	a(href='product.html' class='product-link')
+		.mini-product
+			.mini-product__photo
+				img(src=way+'/content/'+miniPhoto+'.png' alt='mini-photo')
+			.mini-product__description
+				.mini-product__title=miniTitle
+				.mini-product__price=miniPrice

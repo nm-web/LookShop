@@ -1,0 +1,12 @@
+extends template/page
+block variables
+    - var title = 'Product'
+    - var way = 'static/images'
+
+block content
+    include pages/products/breadcrumbs
+    include pages/product/product-view
+
+    include pages/product/block-social
+    include pages/product/tabs-description
+

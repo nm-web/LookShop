@@ -1,0 +1,21 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="en")
+    include ../modules/header/head
+
+    body
+        .wrapper
+            include ../modules/header/header
+            .content.container
+                block content
+
+            include ../modules/footer/footer
+
+        script(src="static/js/libs.min.js")
+        script(src="static/js/main.js")
+        script(src="static/js/slick.min.js")
+
+
+        block script

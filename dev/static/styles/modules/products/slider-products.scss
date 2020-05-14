@@ -1,0 +1,51 @@
+.slider-products {
+  width: 100%;
+  @media screen and (max-width: 950px){
+    display: none;
+  }
+  &__photo{
+    display: flex;
+    flex-basis: 50%;
+  }
+  &__item {
+    padding-left: 1em;
+    border-bottom: 1px solid $grey-border;
+    position: relative;
+
+  }
+  & .slider-arrows {
+    background-color: transparent;
+  }
+  &__text{
+    width: 35%;
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    z-index: 15;
+  }
+}
+
+.description-products {
+  line-height: 1.5;
+  color:#a0a0a0;
+  font-size: 0.75rem;
+  &__title{
+    color:#4a4a4a;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  &__btn{
+    width: 13em;
+    height: 4.17em;
+    margin: 0;
+  }
+
+  &__price{
+    font-size: 2.25rem;
+    color:$pink;
+    font-weight: bold;
+  }
+  &__text{
+    margin: 2.5em 0;
+  }
+}

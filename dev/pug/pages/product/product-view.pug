@@ -1,0 +1,49 @@
+section.product-view-wrapper
+    .product-photo
+        img(src=way+'/content/priview-big.jpg' alt='product')
+        .product-photo__preview.product-photo__preview_margin
+            img(src=way+'/content/preview1.jpg' alt='product')
+            img(src=way+'/content/preview2.jpg' alt='product')
+            img(src=way+'/content/prewiew3.jpg' alt='product')
+            img(src=way+'/content/preview4.jpg' alt='product')
+    .product-description
+        .description-breadcrumbs
+            +icon('arrowleft-bread')
+            |Back to
+            span Women’s Clothing
+        h2.product-description__title Sofi Blouse
+        .product-description__block-price
+            p.product-description__price $98.95
+            .product-description__rating 12 reviews
+                span.rating_active
+                span.rating_active
+                span.rating_active
+                span
+                span
+        .product-description__text
+            |This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            |Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+            |nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+            |ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+            |consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+            |per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit
+            |amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam
+            |pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
+            |Suspendisse in orci enim.
+        .product-variations.wrapper_line-top-dottom
+            .product-variations__size
+                select
+                    option Select size
+                    option xs
+                    option s
+                    option m
+                    option l
+
+            .product-variations__color
+                span
+                span.color_purple
+                span.color_brown
+                span.color_dark-brown
+                span.color_blue
+
+        include add-cart

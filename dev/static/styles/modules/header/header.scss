@@ -1,0 +1,292 @@
+
+.header {
+  position: relative;
+}
+
+.header-top.container {
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+  }
+}
+
+.header-top-wrapper {
+  background-color: $black;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    //font-size: 1.875rem;
+  }
+}
+
+.header-top__phone {
+  padding: 1.11em 0;
+  & span {
+    padding-left: 1em;
+  }
+
+  @media screen and (max-width: 640px) {
+
+    color: #838383;
+    width: 100%;
+    background-color: $white;
+    justify-content: center;
+
+  }
+}
+
+.header-top__services {
+  position: relative;
+  display: flex;
+  //width: 100%;
+  @media screen and (max-width: 640px) {
+    & img {
+      width: 40px;
+    }
+
+  }
+  @media screen and (max-width: 480px) {
+
+    font-size: 0.5rem;
+
+  }
+
+  & .search_active {
+   right: calc(40vw + 4em);
+    width: 100%;
+      display: block;
+  }
+}
+
+.text-input-box {
+  position: absolute;
+
+  height: 4em;
+  top: 0.25em;
+
+  display: none;
+
+
+}
+
+ .text-input {
+  border: none;
+  display: flex;
+
+  &__control {
+    display: inline-block;
+    height: 3em;
+    min-width: 40vw;
+    width: 100%;
+
+  }
+  & .btn-find {
+    border:inset $pink;
+    text-transform: uppercase;
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+
+  }
+
+}
+
+.select-box {
+  //position: relative;
+  height: inherit;
+  display: flex;
+  padding: 1.11em 1em;
+
+}
+
+.vertical-bar {
+  width: 1px;
+  height: inherit;
+  background-color: #444444;
+
+}
+
+.select-style {
+  background-color: transparent;
+  border: none;
+
+
+  & option {
+    text-transform: inherit;
+  }
+}
+
+.select-currency {
+  color: $white;
+  text-transform: uppercase;
+
+  & option {
+    background-color: $black;
+  }
+}
+
+
+.user {
+
+  height: inherit;
+
+  & .user__img {
+    height: auto;
+    padding: 0 1rem;
+    object-fit: cover;
+  }
+
+  &__name {
+    cursor: pointer;
+    margin-right: 1em;
+
+  }
+}
+
+.search-box {
+  height: inherit;
+  padding: 0 1em;
+
+  @media screen and (max-width: 480px) {
+
+    padding:0 0.2em;
+
+  }
+  position: relative;
+  & .btn-search {
+    border:none;
+    background-color: transparent;
+    height: inherit;
+    cursor:pointer;
+    & svg{
+      width: 1em;
+      height: 1em;
+      fill: #fff;
+
+    }
+  }
+}
+
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-down {
+  margin: 0.83em auto;
+  justify-content: space-between;
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+
+  }
+}
+
+.cart-box {
+  width: auto;
+  min-width: 12.5em;
+  position: relative;
+  border-left: 1px solid $grey-border;
+  border-right: 1px solid $grey-border;
+  @media screen and (max-width: 640px) {
+    //width: 100%;
+    font-size: 0.5rem;
+    min-width: 100%;
+    & img {
+      width: 40px;
+    }
+  }
+
+  &__item {
+    height: 50%;
+    border-top: 1px solid $grey-border;
+    padding: 0.625em 1em;
+    color: #949393;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 640px) {
+      height: 100%;
+    }
+  }
+  & .widget-basket {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 15;
+    display: none;
+  }
+
+  & .cart-total{
+    border-bottom: 1px solid $grey-border;
+    background-color: #fafafa;
+  }
+}
+
+.active{
+  display: block;
+}
+.cart-total {
+  text-transform: uppercase;
+
+}
+
+
+.cart-filling {
+  text-transform: capitalize;
+
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+
+.mobile-menu-wrap {
+  width: 100%;
+  margin-bottom: 0.83em;
+  background-color: $pink;
+  height: 2.77em;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 1rem;
+  padding: 0 1.11em;
+}
+
+.icon-logo {
+  width: 8em;
+  height: 2.5em;
+  @media screen and (max-width: 640px) {
+    padding: 1em 0;
+    height: 4rem;
+  }
+
+}
+
+.modal-login {
+  position: absolute;
+  top: calc(50% - 15vmax);
+  left: calc(50% - 15vmax);
+  width: 30vmax;
+  height: 30vmax;
+  display: none;
+  z-index: 99;
+  border-radius: 10%;
+  background-color: #fff;
+}
+
+.active{
+  display: block;
+}

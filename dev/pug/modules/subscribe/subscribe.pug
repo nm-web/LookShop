@@ -1,0 +1,14 @@
+section.subscribe-wrapper
+    .container.subscribe
+        form.subscribe-form(method='get')
+            span Stay updated
+            input#subscribe-form__email(type='email' placeholder='Your email address')
+            button.btn-shop.btn-shop_after.subscribe-form__btn(type='submit')
+                +icon('plus')
+        .social-box
+            span Find us here
+            ul.socials
+                +socialLink('facebook','#')
+                +socialLink('twitter','#')
+                +socialLink('pinteress','#')
+

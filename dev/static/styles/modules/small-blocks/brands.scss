@@ -1,0 +1,46 @@
+.brands{
+  display: flex;
+  flex: 0 0 12%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0;
+
+}
+
+.brands-wrapper {
+  margin-top: 2.5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #d8d8d8;
+  @media screen and (max-width: 640px){
+    display: none;
+  }
+}
+
+.brands-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:before,
+  &:after {
+    top: 0.7em;
+    @include line(40%, 1px, #d8d8d8);
+  }
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+
+}
+
+.brands svg{
+  width: 70px;
+  //height: 40px;
+}
+

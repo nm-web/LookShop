@@ -1,0 +1,140 @@
+.product-view-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  @media screen and (max-width: 990px){
+    flex-direction: column;
+  }
+}
+
+.product-photo {
+  flex-basis: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 990px){
+    margin: 0 auto;
+  }
+  &__preview{
+
+    display: flex;
+    flex-basis: 23%;
+    justify-content: space-between;
+    @media screen and (max-width: 640px){
+      justify-content: center;
+    }
+  }
+}
+.product-photo__preview_margin {
+  margin: 1em 0;
+}
+
+.description-breadcrumbs {
+  border-bottom: 1px solid $grey-border;
+  padding:0.5em 0;
+  color: #a1a1a1;
+  & span {
+    color:  #fd9a79;
+    text-transform: capitalize;
+    margin-left: 0.5em;
+  }
+  & svg{
+    width: 0.8em;
+    height: 0.6em;
+    fill:#a1a1a1;
+  }
+}
+.product-description {
+
+  flex-basis: 60%;
+  margin-left: 2em;
+  &__block-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+
+  }
+
+  &__price{
+    font-size: 2rem;
+    font-weight: bold;
+    color:$pink;
+  }
+
+  &__rating {
+    color: #a1a1a1;
+
+    & span {
+      width: 9px;
+      height: 9px;
+      background: #d1d1d1;
+      display: inline-block;
+      margin-left: 2px;
+    }
+    & span:first-child{
+      margin-left: 1em;
+    }
+    & .rating_active{
+      background: #000;
+    }
+  }
+
+  &__title{
+    margin-top: 1.2em;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  &__text{
+    color:#8f8f8f;
+  }
+}
+
+.product-variations {
+  padding: 0.2em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 640px){
+
+    flex-direction: column;
+  }
+  &__size{
+    color: #e5e5e5;
+    //width: 100%;
+    & select {
+      padding: 0.1em 0;
+      border:none;
+      background: #f4f4f4;
+      width: 100%;
+      & option {
+        background: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__color{
+    & span {
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      margin-left: 0.2em;
+      background: #efebe2;
+
+      & .color_brown{
+        background: #b29b88;
+      }
+      &.color_purple{
+        background: #c9c1c6;
+      }
+      &.color_dark-brown{
+        background: #968886;
+      }
+      &.color_blue{
+        background: #cde0ef;
+      }
+
+    }
+  }
+}

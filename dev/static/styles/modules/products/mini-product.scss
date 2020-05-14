@@ -1,0 +1,27 @@
+.mini-product {
+  margin: 1em 0;
+  display: flex;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 1em;
+
+  &__title {
+    text-transform: uppercase;
+    color:#5e5e5e;
+
+  }
+
+  &__description {
+    line-height: 1;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__price{
+    font-size: 1rem;
+    color:$pink;
+    line-height: 2;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,25 @@
+.products-wraper {
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 100%;
+  flex-wrap: wrap;
+  & .products-actual:last-child {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  & .products-actual:nth-child(3){
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+  }
+}
+
+.products-actual {
+  & .product-card{
+    & .description {
+      background-color: #f7f7f7;
+    }
+  }
+}

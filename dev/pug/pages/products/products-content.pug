@@ -1,0 +1,26 @@
+section.products-content-wrapper
+    section.products-content
+        .block-options
+            .sort Sort by
+                select
+                    option(value='Date') date
+                    option Price
+            include navigation-page
+        section.view-products
+            .view-products__row
+                +productCard('products-photo7','DRESS','69.85','')
+                +productCard('products-photo8','DRESS','39.85','')
+                +productCard('products-photo9','DRESS','39.85','')
+                +productCard('products-photo1','NADIA DRESS','64.95','')
+                +productCard('products-photo2','SOFI BLOUSE','26.35','')
+                +productCard('products-photo3','GOODING SHORTS','79.85','')
+                +productCard('products-photo4','GOODING SHORTS','99.85','sale')
+                +productCard('products-photo5','SHORTS','19.85','')
+                +productCard('products-photo6','BLOUSE','89.85','sale')
+
+        .navigation_down
+            include navigation-page
+
+    section.sidebar
+        include sidebar/sidebar
+

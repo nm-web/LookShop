@@ -1,0 +1,93 @@
+-
+    var menu1=[{text:'contact',link:'#'},
+    {text:'FAQ',link:'#'},
+    {text:'Terms of payment',link:'#'},
+    {text:'Terms of sale',link:'#'},
+    {text:'Delivery terms and conditions',link:'#'},
+    {text:'Returns and Refunds',link:'#'}]
+-
+    var menu2=[{text:'Affiliate',link:'#'},
+    {text:'Cookies',link:'#'},
+    {text:'How to Shop',link:'#'},
+    {text:'About Nelly',link:'#'},
+    {text:'Investor relations',link:'#'}]
+-
+    var menu3=[{text:'Evening dresses',link:'#'},
+    {text:'Makeup',link:'#'},
+    {text:'Fashion forward',link:'#'},
+    {text:'training clothes',link:'#'},
+    {text:'Special',link:'#'}]
+-
+    var menu4=[{text:'paris',link:'#'},
+    {text:'New York',link:'#'},
+    {text:'tokio',link:'#'},
+    {text:'london',link:'#'},
+    {text:'madrid',link:'#'}]
+
+footer.footer
+    section.accept
+        p We accept
+            img.pay-card(src='static/images/general/paycard1.png' alt='pay-card')
+    section.footer-menu
+        .container.footer-menu-wrapper
+            .footer-menu__box
+                .menu-footer
+                    .menu-footer__title
+                        h4 Customer Service
+                    +menuFooter(menu1)
+                .menu-footer
+                    .menu-footer__title
+                        h4 Information
+                    +menuFooter(menu2)
+                .menu-footer
+                    .menu-footer__title
+                        h4 Campaigns
+                    +menuFooter(menu3)
+                .menu-footer
+                    .menu-footer__title
+                        h4 Stores
+                    +menuFooter(menu4)
+            .menu-footer.footer-social
+                .menu-footer__title
+                    h4 Social
+                nav
+                    ul.footer-social__menu
+                        li
+                            a(href='#')
+                                +icon('twitter-footer')
+                        li
+                            a(href='#')
+                                +icon('pinteress-footer')
+                        li
+                            a(href='#')
+                                +icon('facebook-footer')
+                        li
+                            a(href='#')
+                                +icon('google-plus')
+                        li
+                            a(href='#')
+                                +icon('t-footer')
+                        li
+                            a(href='#')
+                                +icon('v-footer')
+            .stamp-footer
+                .stamp-footer__icon
+                    +icon('stamp-footer')
+                .stamp-footer__text 100%
+                    p secured
+    section.subfooter-wrapper
+        .container.subfooter
+            nav
+                ul.subfooter__menu
+                    li
+                        a(href='#') Privacy & Cookies
+                    li
+                        a(href='#') Terms & Conditions
+                    li
+                        a(href='#') Accessibility
+                    li
+                        a(href='#') Story Directory
+                    li
+                        a(href='#') About Us
+            .subfooter__right © LookShop.com
+                p All Rights Reserved

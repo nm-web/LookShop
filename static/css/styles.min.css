@@ -312,7 +312,7 @@ template {
   font-size: 1em; }
   @media screen and (max-width: 640px) {
     :root {
-      font-size: 1.875em; } }
+      font-size: 1.85em; } }
 
 html {
   height: 100%; }
@@ -2270,6 +2270,10 @@ a {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   margin-left: 2em; }
+ @media screen and (max-width: 640px) {
+    .product-description{
+      margin-left: 0; 
+    font-size:0.8rem} }
   .product-description__block-price {
     display: -webkit-box;
     display: -ms-flexbox;
